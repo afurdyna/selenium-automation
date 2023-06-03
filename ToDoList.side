@@ -1,0 +1,75 @@
+{
+  "id": "3032d450-9a8d-4894-8128-a73b30863f7d",
+  "version": "2.0",
+  "name": "ToDoList",
+  "url": "https://todolist.james.am",
+  "tests": [{
+    "id": "21b84522-ae56-42d0-a92b-2e551b31d7ec",
+    "name": "PierwszyTest",
+    "commands": [{
+      "id": "09b4eddb-060b-4e46-aacd-59d3e88c3a0e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4ad914ee-e062-4f78-a1a1-66e76cdeb4f8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "908x1036",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bbf9d282-d6d9-43d0-9db7-68486bd4a779",
+      "comment": "",
+      "command": "type",
+      "target": "css=.new-todo",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "abc"
+    }, {
+      "id": "6eee904a-b389-4926-83ed-7985fbd94fb4",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.new-todo",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "1743f1ce-3931-432b-84f3-e6173ff0cd54",
+      "comment": "",
+      "command": "type",
+      "target": "css=.new-todo",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "   dfg"
+    }, {
+      "id": "3a7d688f-94cf-462b-aaea-05cfc073bef7",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.new-todo",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }],
+  "suites": [{
+    "id": "becf109e-b727-4003-ad07-6e2c50cc3da5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["21b84522-ae56-42d0-a92b-2e551b31d7ec"]
+  }],
+  "urls": ["https://todolist.james.am/"],
+  "plugins": []
+}
