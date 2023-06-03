@@ -1,0 +1,1 @@
+Zainstaluj rozszerzenie Selenium IDE pobrane z
